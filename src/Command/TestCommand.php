@@ -62,7 +62,7 @@ class TestCommand extends Command
                             }
                         }
                     }
-                    if(!empty($arr)) {
+                    if(count($arr) > 1) {
                         $recordData[] = $arr;
                     }
 //                    echo PHP_EOL;
