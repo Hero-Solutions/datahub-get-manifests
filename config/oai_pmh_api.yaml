@@ -1,0 +1,14 @@
+parameters:
+  oai_pmh_api:
+    url: 'http://datahub.kmska.be/oai'
+    metadata_prefix: 'oai_lido'
+    namespace: 'lido'
+    languages:
+      - nl
+#      - en
+    max_records: -1
+
+  datahub_fields:
+    object_number: 'descriptiveMetadata/objectIdentificationWrap/repositoryWrap/repositorySet/workID[@type="object-number"]'
+    iiif_manifest: 'administrativeMetadata/resourceWrap/resourceSet[resourceType/term="IIIF Manifest"]/resourceID'
+    thumbnail: 'administrativeMetadata/resourceWrap/resourceSet[resourceType/term="thumbnail"]/resourceID'
